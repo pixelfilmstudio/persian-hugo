@@ -11,18 +11,64 @@
 <section class="section pt-0">
   <div class="container">
     <div class="row col-lg-8 mx-auto">
-      <form action="{{ .Site.Params.contact_form_action }}" method="POST" class="row">
+      <form action="{{ .Site.Params.contact_form_action }}" method="POST" class="row needs-validation" novalidate>
         <div class="form-group col-md-6">
-          <input type="text" name="first-name" id="first-name" class="form-control" placeholder="First Name">
+          <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+            <div class="invalid-feedback">
+                Please enter your name.
+            </div>
         </div>
         <div class="form-group col-md-6">
-          <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Last Name">
+          <input type="text" name="mobile" id="mobile" class="form-control" placeholder="Mobile No." required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+            <div class="invalid-feedback">
+                Please enter your contact number.
+            </div>
         </div>
-        <div class="form-group col-md-6">
+        <div class="form-group col-12">
           <input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
         </div>
-        <div class="form-group col-md-6">
-          <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+        <div class="form-group col-12">
+          <input type="email" name="email" id="addr" class="form-control" placeholder="Event address">
+        </div>
+        <legend class="col-form-label col-sm-2 pt-0">Event&nbsp;type</legend>
+        <div class="form-group">
+<!--          <label class="form-check-label">  </label>-->
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="ev-wedding">
+            <label class="form-check-label" for="ev-wedding">
+              Wedding
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="ev-baby-shoot">
+            <label class="form-check-label" for="ev-baby-shoot">
+              Baby shoot
+            </label>
+          </div>
+
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="ev-1">
+            <label class="form-check-label" for="ev-1">
+              Baby shoot
+            </label>
+          </div>
+
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="ev-2">
+            <label class="form-check-label" for="ev-2">
+              Baby shoot
+            </label>
+          </div>
         </div>
         <div class="form-group col-12">
           <textarea name="message" id="message" class="form-control" placeholder="Type Your Message Here ..."></textarea>

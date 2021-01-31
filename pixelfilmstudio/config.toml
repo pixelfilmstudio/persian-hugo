@@ -49,18 +49,18 @@ url = "about"
 weight = 2
 
 [[menu.main]]
-name = "Category"
-url = "categories/nature/"
+name = "Services"
+url = "services"
 weight = 3
+
+[[menu.main]]
+name = "Packages"
+url = "packages"
+weight = 4
 
 [[menu.main]]
 name = "Contact"
 url = "contact"
-weight = 4
-
-[[menu.main]]
-name = "Privacy Policy"
-url = "privacy-policy"
 weight = 5
 
 
@@ -71,11 +71,13 @@ logo = "images/logo.png"
 description = "This is meta description"
 author = "Themefisher"
 # search  
-search = true
+search = false
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # copyright
 copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+
+usedothings = true
 
 # Preloader
 [params.preloader]
@@ -86,3 +88,20 @@ preloader = "" # use jpg, png, svg or gif format.
 [params.cookies]
 enable = true
 expire_days = 2
+
+
+
+[[params.Packages]]
+logo = "fab fa-python"
+title = "30,000"
+description = "200 Photos \n Camera (1) \n Video (1)"
+
+[[params.Packages]]
+logo = "fas fa-robot"
+title = "60,000"
+description = "400 Photos \n Camera (2) \n Video (1)"
+
+[[params.Packages]]
+logo = "fab fa-html5"
+title = "1,00,000"
+description = "600 Photos \n Camera (2) \n Video (1) \n Candid (1)"
